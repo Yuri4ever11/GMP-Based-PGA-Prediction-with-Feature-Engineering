@@ -31,54 +31,55 @@
 
 # 使用 Conda 创建和管理虚拟环境
 
+————————————————————————————————————————————————————————————————————————————
+# 使用 Conda 创建和管理虚拟环境
+
 ## 创建虚拟环境
 
-```bash
+运行以下命令以创建一个新的虚拟环境：
 conda create -n regression_env python=3.8 -y
+
 激活虚拟环境
-bash
-
-复制
+激活刚创建的虚拟环境：
 conda activate regression_env
+
 安装依赖
-bash
-
-复制
+安装项目所需的依赖库：
 pip install -r requirements.txt
-验证安装
-bash
 
-复制
+验证安装
+检查安装的 pandas 版本以确保正确安装：
 python -c "import pandas; print(pandas.version)"
+
 使用虚拟环境
 确保您已激活虚拟环境，然后运行您的代码。
-
 退出虚拟环境
 完成后，您可以使用以下命令退出虚拟环境：
-
-bash
-
-复制
 conda deactivate
+
 维护虚拟环境
 更新依赖库
 定期更新依赖库：
-
-bash
-
-复制
 pip install --upgrade -r requirements.txt
+
 移除虚拟环境
 如果需要移除虚拟环境，可以使用以下命令：
-
-bash
-
-复制
 conda env remove -n regression_env -y
+
 其他说明
 您可以根据需要修改环境名称和 Python 版本。
 确保您已安装 conda。
-您可以使用 conda list 命令查看已安装的库。
-使用 conda env update -n regression_env -f environment.yml 命令从 environment.yml 文件中更新环境。
+使用以下命令查看已安装的库：
+conda list
 
-   
+
+
+
+
+
+
+
+
+
+
+
