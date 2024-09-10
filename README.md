@@ -24,3 +24,61 @@
 ## 完整代码库
 
 该项目提供了一整套基于数据分析、数据预处理、特征工程和模型训练的完整代码库，涵盖了回归分析的各个环节，为用户提供了一个完整的学习和应用框架。通过该 GitHub 项目，用户可以学习到数据分析、数据处理和机器学习回归预测的常用方法和技巧，并能够快速构建和应用回归模型，解决实际问题。
+
+## 设置虚拟环境
+
+为了确保代码库的稳定性和可移植性，建议您创建一个新的 conda 虚拟环境来运行代码。以下步骤将引导您完成环境设置：
+
+# 使用 Conda 创建和管理虚拟环境
+
+## 创建虚拟环境
+
+```bash
+conda create -n regression_env python=3.8 -y
+激活虚拟环境
+bash
+
+复制
+conda activate regression_env
+安装依赖
+bash
+
+复制
+pip install -r requirements.txt
+验证安装
+bash
+
+复制
+python -c "import pandas; print(pandas.version)"
+使用虚拟环境
+确保您已激活虚拟环境，然后运行您的代码。
+
+退出虚拟环境
+完成后，您可以使用以下命令退出虚拟环境：
+
+bash
+
+复制
+conda deactivate
+维护虚拟环境
+更新依赖库
+定期更新依赖库：
+
+bash
+
+复制
+pip install --upgrade -r requirements.txt
+移除虚拟环境
+如果需要移除虚拟环境，可以使用以下命令：
+
+bash
+
+复制
+conda env remove -n regression_env -y
+其他说明
+您可以根据需要修改环境名称和 Python 版本。
+确保您已安装 conda。
+您可以使用 conda list 命令查看已安装的库。
+使用 conda env update -n regression_env -f environment.yml 命令从 environment.yml 文件中更新环境。
+
+   
